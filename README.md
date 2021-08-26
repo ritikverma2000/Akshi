@@ -1,5 +1,4 @@
-# Akshi
-An assistance system for visually challenged using Machine Learning
+# Akshi - An assistance system for visually challenged using Machine Learning
 ## Face Detection
 Face detection is a technique that identifies or locates human faces in digital images. A typical example of face detection occurs when we take photographs through our smartphones, and it instantly detects faces in the picture. Face detection is different from Face recognition. Face detection detects merely the presence of faces in an image while facial recognition involves identifying whose face it is.
 
