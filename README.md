@@ -8,5 +8,4 @@ Face detection is performed by using classifiers. A classifier is essentially an
 
 1. 'Haar features' extraction
 2. 'Integral Images' concept
-3. 'Adaboost': to improve classifier accuracy
-4. Using 'Cascade of Classifiers' Face Detection with OpenCV-Python
+3. Using 'Cascade of Classifiers' Face Detection with OpenCV-Python
