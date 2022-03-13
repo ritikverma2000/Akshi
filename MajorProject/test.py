@@ -1,14 +1,9 @@
-import os
-import datetime, time
-from threading import Thread
 import pyttsx3
 from flask import Flask, render_template, Response, request
 import cv2
 from keras.preprocessing import image
 import numpy as np
 from keras.models import model_from_json
-
-import emotion
 
 app = Flask(__name__)
 
