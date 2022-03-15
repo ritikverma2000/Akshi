@@ -1,3 +1,4 @@
+import os
 import pyttsx3
 from flask import Flask, render_template, Response, request
 import cv2
@@ -31,7 +32,7 @@ def text_to_speech(text):
 
 
 def gen_frames():
-    json_file = open('E://MajorProjectLatest//test_fol//fer.json', 'r')
+    json_file = open('ModelFiles//fer.json', 'r')
 
     loaded_model_json = json_file.read()
     json_file.close()
@@ -39,7 +40,7 @@ def gen_frames():
 
     # # Load weights and them to model
 
-    model.load_weights('E://MajorProjectLatest//test_fol//fer.h5')
+    model.load_weights('ModelFiles//fer.h5')
     cap = cv2.VideoCapture(0)
 
     while True:
@@ -48,8 +49,7 @@ def gen_frames():
         if not success:
             break
         else:
-            face_haar_cascade = cv2.CascadeClassifier('E://MajorProjectLatest//test_fol'
-                                                      '//haarcascade_frontalface_default.xml')
+            face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
             gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.1, 6, minSize=(150, 150))
             for (x, y, w, h) in faces_detected:
@@ -98,4 +98,5 @@ def video_feed():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
