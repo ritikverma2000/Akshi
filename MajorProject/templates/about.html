@@ -2,179 +2,19 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/aboutpage.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <script src="/static/aboutpage.js"></script>
+
     <title>Akshi</title>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
 
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 40px;
-        }
-
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 16px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        .openbtn {
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #111;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-        }
-
-        .openbtn:hover {
-            background-color: #444;
-        }
-
-        #main {
-            transition: margin-left .5s;
-            padding: 8px;
-        }
-
-        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-        @media screen and (max-height: 450px) {
-            .sidebar {
-                padding-top: 15px;
-            }
-
-            .sidebar a {
-                font-size: 18px;
-            }
-        }
-
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-
-
-
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Button used to open the chat form - fixed at the bottom of the page */
-        .open-button {
-            background-color: #30f;
-            color: white;
-            padding: 16px 20px;
-            border-radius: 50%;
-            cursor: pointer;
-            opacity: 0.8;
-            position: fixed;
-            bottom: 23px;
-            right: 28px;
-            height: 80px;
-            width: 80px;
-        }
-
-        .circle {
-            height: 50px;
-            width: 50px;
-            background-color: #555;
-            border-radius: 50%;
-        }
-
-        /* The popup chat - hidden by default */
-        .chat-popup {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            right: 15px;
-            border: 3px solid #f1f1f1;
-            z-index: 9;
-            width: 40%;
-        }
-
-        /* Add styles to the form container */
-        .form-container {
-            max-width: 610px;
-            padding: 10px;
-            background-color: white;
-        }
-
-        /* Full-width textarea */
-        .form-container textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 5px 0 22px 0;
-            border: none;
-            background: #f1f1f1;
-            resize: none;
-            min-height: 200px;
-        }
-
-        /* When the textarea gets focus, do something */
-        .form-container textarea:focus {
-            background-color: #ddd;
-            outline: none;
-        }
-
-        /* Set a style for the submit/send button */
-        .form-container .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            margin-bottom: 10px;
-            opacity: 0.8;
-        }
-
-        /* Add a red background color to the cancel button */
-        .form-container .cancel {
-            background-color: red;
-        }
-
-        /* Add some hover effects to buttons */
-        .form-container .btn:hover,
-        .open-button:hover {
-            opacity: 1;
-        }
-    </style>
 </head>
 
-<body>
-
+<body style="width:fit-content;padding: 1%;border:2px salmon">
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="home">Home</a>
@@ -182,229 +22,192 @@
         <a href="testcamera">Camera</a>
 
 
-
     </div>
-    <button class="openbtn" onclick="openNav()">☰ </button>
 
 
+    <section class="section-1">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <!-- <img src="/static/aboutpageimage1.jpg" style=""> -->
+        <div class="heading-1">
+            <h4
+                style="font-size: x-large;color: aliceblue;text-transform: uppercase;overflow-wrap:calc();text-align: center;">
+                An assistance system for
+                visually challenged using Machine Learning</h4>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Akshi, About the Project">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/nicepage.css" media="screen">
-<link rel="stylesheet" href="/static/Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.4.3, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-
-
-
-
-
-
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
-  </head>
-  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-edb1"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
-    <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_1799" data-image-width="1280" data-image-height="853">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-default u-text-1">Akshi</h2>
-        <div class="u-align-center-xs u-container-style u-expanded-width-xs u-group u-palette-1-base u-group-1">
-          <div class="u-container-layout u-valign-middle-xs u-container-layout-1">
-            <h4 class="u-text u-text-default u-text-2"> An assistance system for visually
-challenged using Machine Learning</h4>
-          </div>
         </div>
-      </div>
+
+
     </section>
-    <section class="u-clearfix u-grey-5 u-section-2" id="carousel_d204">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout" style="">
-            <div class="u-layout-col" style="">
-              <div class="u-size-30" style="">
-                <div class="u-layout-row" style="">
-                  <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                      <img class="u-image u-image-default u-image-1" src="/static/58d759decac54be45b02dd3192204fb5011dcffbe8ad2902bf3d719b61835040c02ab0bcb11d91b0e66074b1c959ca5284e2bf7f1fd89d944aaa19_1280.jpg" alt="" data-image-width="1280" data-image-height="1268">
-                    </div>
-                  </div>
-                  <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
-                    <div class="u-container-layout u-container-layout-2">
-                      <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">About the Project</h2>
-                      <p class="u-align-justify u-custom-font u-font-montserrat u-text u-text-2"> This work focuses on emotion
-recognition. Emotion reveals valuable information regarding human
-communications. It is common to use facial expressions to express emotions
-during a conversation and some interpersonal communication can be achieved
-using facial expressions only. If a machine were able to interpret its user’s
-facial expression correctly, it might be able to help its user more
-efficiently. In this work, an emotion recognition system is introduced for the
-visually impaired people using machine learning. Machine learning is one of the
-current technologies that use computers to perform tasks like humans. Inspired
-by the advances in Convolutional Neural Networks (CNNs) achieved in image
-recognition and classification, we propose an approach to address this problem.
-The experimental results show that after adopting this method, overall
-robustness and accuracy of facial expression recognition have been greatly
-improved compared to those obtained by transfer learning.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-align-justify u-container-style u-layout-cell u-size-60 u-white u-layout-cell-3">
-                    <div class="u-container-layout u-valign-middle u-container-layout-3">
-                      <p class="u-custom-font u-font-montserrat u-text u-text-3">
-                        <span style="font-size: 1.125rem;"> Facial
-expression which is used to represent various emotion’s is the most effective
-form of non-verbal communication, and it provides intimation about emotional
-state, mindset, and intention.<br>
-                          <br>Entire
-project is subdivided into the following steps five steps that’s Image
-acquisition, face detection, feature extraction, emotion recognition or
-classification we have used FER2013 dataset which consists of 35,685 examples
-of 48x48 pixel grayscale images of faces.&nbsp;&nbsp;
-                        </span>
-                        <br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="section-2">
+        <div class="imageaboutproject">
+            <img class="" style="width:100%" src=" /static/aboutpageimage2.jpg">
+
+
         </div>
-      </div>
+        <div class="heading-2">
+            <h2 style="font-family: Raleway;padding-top: 10%;margin: 5%;">
+                <strong>
+                    About the Project
+                </strong>
+            </h2>
+            <p class="" style="text-align: justify;margin: 5%;font-size:24px ;font-family: Raleway">
+                This
+                work focuses on emotion
+                recognition. Emotion reveals valuable information regarding human
+                communications. It is common to use facial expressions to express
+                emotions
+                during a conversation and some interpersonal communication can be
+                achieved
+                using facial expressions only. If a machine were able to interpret its
+                user’s
+                facial expression correctly, it might be able to help its user more
+                efficiently. In this work, an emotion recognition system is introduced
+                for the
+                visually impaired people using machine learning. Machine learning is one
+                of the
+                current technologies that use computers to perform tasks like humans.
+                Inspired
+                by the advances in Convolutional Neural Networks (CNNs) achieved in
+                image
+                recognition and classification, we propose an approach to address this
+                problem.
+                The experimental results show that after adopting this method, overall
+                robustness and accuracy of facial expression recognition have been
+                greatly
+                improved compared to those obtained by transfer learning.</p>
+
+        </div>
+        <div class="heading-3">
+            <p class="" style=" font-size:24px;font-family: Raleway;text-align: justify;margin: 1%;">
+                <span> Facial
+                    expression which is used to represent various emotion’s is the most
+                    effective
+                    form of non-verbal communication, and it provides intimation about
+                    emotional
+                    state, mindset, and intention.<br>
+                    <br>Entire
+                    project is subdivided into the following steps five steps that’s
+                    Image
+                    acquisition, face detection, feature extraction, emotion recognition
+                    or
+                    classification we have used FER2013 dataset which consists of 35,685
+                    examples
+                    of 48x48 pixel grayscale images of faces.&nbsp;&nbsp;
+                </span>
+                <br>
+            </p>
+
+        </div>
+
+
+
+
+
     </section>
-    <section class="u-align-center u-clearfix u-grey-5 u-section-3" id="carousel_67d0">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-align-left u-container-style u-expanded-width-xs u-group u-white u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h4 class="u-custom-font u-font-raleway u-text u-text-1"> Methodology Adopted</h4>
-            <ol class="u-text u-text-2">
-              <li>
-                <span style="font-weight: 700;">Data Pre-processing</span>:-&nbsp;First step was to select appropriate dataset so for our project work we opted for FER 2013 dataset.<br>
-              </li>
-              <li>
-                <span style="font-weight: 700;">Model training</span>:-&nbsp;We used pre-processing techniques including resizing, reshaping, and grayscale conversion.&nbsp;<br>
-              </li>
-              <li>
-                <span style="font-weight: 700;">Implementation</span>:-&nbsp;We used two approaches one is CNN based and other transfer learning using FER dataset.<br>
-              </li>
-              <li>
-                <span style="font-weight: 700;">Text to Speech Conversion</span>:- In this stage our model will be used for real time emotion identification from web camera of laptop desktop and the emotion, which is classified will be expressed as an audio through audio device.&nbsp;<br>
-              </li>
+    <section class="section-3">
+        <div class="heading-4">
+            <h2 style="font-family: Raleway;padding-top: 5%;margin: 5%;">
+                <strong>
+                    Methodology Adopted
+                </strong>
+            </h2>
+            <ol style="font-family: Raleway;text-align: justify;font-size: 24px;">
+                <li>
+                    <span style="font-weight: 700;">Data Pre-processing</span>:-&nbsp;First step was to
+                    select
+                    appropriate dataset so for our project work we opted for FER 2013 dataset.<br>
+                </li>
+                <br>
+                <li>
+                    <span style="font-weight: 700;">Model training</span>:-&nbsp;We used pre-processing
+                    techniques
+                    including resizing, reshaping, and grayscale conversion.&nbsp;<br>
+                </li>
+                <br>
+                <li>
+                    <span style="font-weight: 700;">Implementation</span>:-&nbsp;We used two approaches one
+                    is CNN
+                    based and other transfer learning using FER dataset.<br>
+                </li>
+                <br>
+                <li>
+                    <span style="font-weight: 700;">Text to Speech Conversion</span>:- In this stage our
+                    model will
+                    be used for real time emotion identification from web camera of laptop desktop and the
+                    emotion,
+                    which is classified will be expressed as an audio through audio device.&nbsp;<br>
+                </li>
             </ol>
-          </div>
+
         </div>
-        <img class="u-border-20 u-border-palette-1-base u-image u-image-default u-image-1" src="/static/pptflowchartpng.png" alt="" data-image-width="1280" data-image-height="720">
-      </div>
-    </section>
-    <section class="u-clearfix u-section-4" id="carousel_980f">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout" style="">
-            <div class="u-layout-row" style="">
-              <div class="u-align-right u-container-style u-layout-cell u-size-22 u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1">
-                  <img class="u-border-20 u-border-palette-1-base u-image u-image-1" src="/static/985998665236d65e264e8995701f7980ec05a97ea44da3f28726ebecf7aed44fcec81b95b7637a3a3103623f59d792147a39f4a3251951a9503d38_1280.png" data-image-width="1280" data-image-height="768">
-                </div>
-              </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-38 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <div class="u-border-3 u-border-grey-25 u-line u-line-horizontal u-line-1"></div>
-                  <h4 class="u-custom-font u-font-raleway u-text u-text-1"> Features
-of our Project</h4>
-                  <ol class="u-text u-text-2">
-                    <li>
-                      <span style="font-weight: 700; font-size: 1.125rem;">It
-can be helpful for the better interaction among the blind and normal person </span>
-                    </li>
-                    <li>
-                      <span style="font-weight: 700; font-size: 1.125rem;">Blind can be more open to other person if knowing the expression </span>
-                    </li>
-                    <li>
-                      <span style="font-weight: 700; font-size: 1.125rem;">Dont need to rely on 3rd person for considering emotion expression of other </span>
-                    </li>
-                    <li>
-                      <span style="font-weight: 700; font-size: 1.125rem;">Our
-project aims for better development of the blind among society </span>
-                    </li>
-                    <li>
-                      <span style="font-weight: 700; font-size: 1.125rem;">Individuals with autism frequently fail to react appropriately to the emotions
-of others, and researchers have suggested that an impairment in emotional
-expression recognition may contribute to these inappropriate reactions and to
-their understanding of emotion in general.</span>
-                    </li>
-                  </ol>
-                  <div class="u-border-3 u-border-grey-25 u-expanded-width u-line u-line-horizontal u-line-2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="imageworkflow">
+            <img style="width:100%" src="/static/TRAINING MODEL (1).png">
+
+
         </div>
-      </div>
+
     </section>
-    <section class="u-clearfix u-palette-1-base u-section-5" id="sec-0781">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-social-icons u-spacing-20 u-social-icons-1">
-          <a class="u-social-url" target="_blank" data-type="Custom" title="Github" href="https://github.com/ritikverma2000/Akshi"><span class="u-file-icon u-icon u-social-custom u-social-icon u-icon-1"><img src="/static/7336091.png" alt=""></span>
-          </a>
+    <section class="section-4">
+        <div class="imagefeatures">
+            <img src="/static/aboutpageimage3.png" width="280px" height="400px">
         </div>
-      </div>
+
+        <div class="heading-5">
+            <hr style="width:100%;text-align:left;margin: auto;color: black;">
+            <h2 style="font-family: Raleway;padding-top: 5%;margin: 5%;">
+                <strong>
+                    Features of our Project
+                </strong>
+            </h2>
+            <ol style="font-family: Raleway;text-align: justify;font-size: 24px;">
+                <li>
+                    <span style="font-weight: 700; font-size: 1.125rem;">It
+                        can be helpful for the better interaction among the blind and normal
+                        person </span>
+                </li>
+                <li>
+                    <span style="font-weight: 700; font-size: 1.125rem;">Blind can be more open
+                        to other person if knowing the expression </span>
+                </li>
+                <li>
+                    <span style="font-weight: 700; font-size: 1.125rem;">Dont need to rely on
+                        3rd person for considering emotion expression of other </span>
+                </li>
+                <li>
+                    <span style="font-weight: 700; font-size: 1.125rem;">Our
+                        project aims for better development of the blind among society </span>
+                </li>
+                <li>
+                    <span style="font-weight: 700; font-size: 1.125rem;">Individuals with autism
+                        frequently fail to react appropriately to the emotions
+                        of others, and researchers have suggested that an impairment in
+                        emotional
+                        expression recognition may contribute to these inappropriate reactions
+                        and to
+                        their understanding of emotion in general.</span>
+                </li>
+            </ol>
+            <hr style="width:90%;text-align:left;margin: auto;color: black;">
+
+
+        </div>
+
+
     </section>
-  </body>
+    <section class="section-5">
+        <div class="heading-6">
+
+            <a class="u-social-url" target="_blank" data-type="Custom" title="Github"
+                href="https://github.com/ritikverma2000/Akshi"><span class=""><img src="/static/aboutpageimage4.jpg"
+                        style="width: 50%;" alt=""></span>
+            </a>
+
+        </div>
 
 
-    <input type="image" src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/messages_5122x.png"
-        class="open-button" onclick="openForm()"></input>
+    </section>
 
-    <div class="chat-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-            <h1>Compose Email</h1>
-
-            <label for="msg"><b></b></label>
-            <p>From &nbsp&nbsp&nbsp&nbsp<input type="text" name="from" style="width:450px" /></p>
-            <p>To &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="to" style="width:450px" /></p>
-            <p>Subject &nbsp<input type="text" name="Subject" style="width:447px" /></p>
-
-            <textarea placeholder="Type message.." name="msg" required></textarea>
-
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";
-            document.getElementById("main").style.marginLeft = "200px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-
-    </script>
 
 </body>
+
+</html>
