@@ -93,10 +93,10 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
     max-width: fit-content;
-    border: 2px solid blueviolet;
+    /*border: 2px solid blueviolet;*/
     align-items: center;
     background-color: #dbdada;
     align-items: center;
@@ -109,7 +109,7 @@
     width: 55%;
 
     margin-left: 35%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
 
 
@@ -118,13 +118,13 @@
 .heading-2 {
     width: 85%;
     margin-right: 25%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background-color: #fffefe;
     align-items: center;
 }
 
 .heading-3 {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 150%;
     /* align-items: center; */
     margin-left: 37%;
@@ -139,10 +139,10 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
     max-width: fit-content;
-    border: 2px solid blueviolet;
+    /*border: 2px solid blueviolet;*/
     align-items: center;
     background-color: #dbdada;
     align-items: center;
@@ -152,7 +152,7 @@
 }
 
 .heading-4 {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 90%;
     align-items: center;
     background-color: #fffefe;
@@ -174,9 +174,9 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
-    border: 2px solid blueviolet;
+    /*border: 2px solid blueviolet;*/
     align-items: center;
     background-color: #ffffff;
     align-items: center;
@@ -193,7 +193,7 @@
 }
 
 .heading-5 {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 65%;
     align-items: center;
     background-color: #fffefe;
