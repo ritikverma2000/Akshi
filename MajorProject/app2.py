@@ -146,33 +146,6 @@ def gen_frames():
                         check_angry = False
                         check_sad = False
 
-            #
-            #
-            #
-            #
-            #
-            #     # playsound.playsound(filename)
-            #
-            #
-            # if emotion_label == 'Sad':
-            #     filename = "C://Users//varma//Desktop//MajorProjectReportFiles//CODE_FILES//WORK" \
-            #                "//MajorProject//AudioFiles//sad.mp3"
-            #
-            #     playsound.playsound(filename)
-            #
-            #     playsound.playsound(filename)
-            # if emotion_label == 'Angry':
-            #     filename = "C://Users//varma//Desktop//MajorProjectReportFiles//CODE_FILES//WORK" \
-            #                "//MajorProject//AudioFiles//angry.mp3"
-            #
-            #     playsound.playsound(filename)
-            #
-            # if emotion_label == 'Neutral':
-            #     filename = "C://Users//varma//Desktop//MajorProjectReportFiles//CODE_FILES//WORK" \
-            #                "//MajorProject//AudioFiles//neutral.mp3"
-            #
-            #     playsound.playsound(filename)
-
         ret, buffer = cv2.imencode('.jpg', cv2.resize(frame, (1000, 700)))
         frame = buffer.tobytes()
         yield (b'--frame\r\n'
